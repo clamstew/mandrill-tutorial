@@ -2,10 +2,10 @@
 
 I was working on a hackathon project last weekend, and we need a quick way to send emails out from our Sinatra application. At first we tried to integrate the <a href="https://rubygems.org/gems/gmail" target="_blank">gmail gem</a>, but after realizing that is an easy way to get that account flagged at spam, we decided to turn to Mandrill by Mailchimp.
 
-I'll show you how to
+__I'll show you how to:__
 <ul>
-	<li>integrate the Mandrill API</li>
-	<li>how to send mail with the Mandrill API</li>
+	<li>Integrate the Mandrill API</li>
+	<li>How to send mail with the Mandrill API</li>
 	<li>(COMING SOON)and some quick advanced features in the mandrill API</li>
 	<ul>
 		<li>How to send with multiple users in To and other fields</li>
@@ -17,13 +17,13 @@ I'll show you how to
 
 __________________________
 
-<h4>Example APP: My Penpal</h4>
+<h4>Example APP: My Mail Sender</h4>
 
-We are going to build a quick application to send emails out to users who subscribe to your mailing list.  
+We are going to build a quick application to send email to yourself.<!--s out to users who subscribe to your mailing list.-->
 
-I created a bare bones Rails App for this tutorial on using Mandrill.
+I created a bare bones Sinatra app for this tutorial that you can fork from this repo and clone down.
 
-__But first, lets get a Mandrill account.__
+__But first, let's get a Mandrill account.__
 
 <h4>Get API Key:</h4>
 Go to [https://mandrill.com/signup/](https://mandrill.com/signup/) and *set up a quick FREE acount*.  You just got 12,000 emails per month!
@@ -59,7 +59,9 @@ Add the following to your <code>.env</code> file:
 MANDRILL_APIKEY = 'xxxxxxxxxxxxxxxxxxxxx' #test or the #real one
 </pre>
 
-As [this getting going page](http://help.mandrill.com/entries/23257181-Using-the-Mandrill-Ruby-Gem) says: <code>The gem assumes your API key is stored as an environment variable called MANDRILL_APIKEY.</code>. So it goes in the <code>.env</code> file and requires no setup beyond that.
+As [this getting going page](http://help.mandrill.com/entries/23257181-Using-the-Mandrill-Ruby-Gem) says: <code>The gem assumes your API key is stored as an environment variable called MANDRILL_APIKEY.</code>. 
+
+So it goes in the <code>.env</code> file and requires no setup beyond that.
 
 __STEP 5:__ add a new folder called <code>lib/</code> with <code>$ mkdir lib</code>
 
@@ -181,11 +183,13 @@ __NOTE:__ Fill in your email for: <code>youremailprefix%40something.com</code> i
 __FINAL:__ If you go to the branch in the repo you forked above called <code>$ git checkout final;</code>. This is my finished code from this tutorial, so you can check that it is all there compared to your work. 
 
 ___________________________
+
 <h3>Extensions to come:</h3>
 
 * How to put in multiple recipients
 * How to put in merge fields for those recipients
 * How to suppress recipients so they don't all show in the To field.
+
 ___________________________
 
 <h3>Resources:</h3>
@@ -194,7 +198,7 @@ ___________________________
 
 [Where to view API Logs](https://mandrillapp.com/settings/api)
 
-__NOTE:__ I had to use FOREMAN by heroku instead of thin or webbrick webserver to get env files to work
+<!--__NOTE:__ I had to use FOREMAN by heroku instead of thin or webbrick webserver to get env files to work-->
 __________________________
 
  

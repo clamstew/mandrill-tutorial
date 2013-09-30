@@ -6,7 +6,7 @@ I'll show you how to
 <ul>
 	<li>integrate the Mandrill API</li>
 	<li>how to send mail with the Mandrill API</li>
-	<li>and some quick advanced features in the mandrill API</li>
+	<li>(COMING SOON)and some quick advanced features in the mandrill API</li>
 	<ul>
 		<li>How to send with multiple users in To and other fields</li>
 		<li>How to suppress users from the To field</li>

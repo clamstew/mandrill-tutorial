@@ -4,5 +4,5 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 get '/' do
-  'Welcome to your Penpal app!'
+  'Welcome to your Mail Sender app!'
 end

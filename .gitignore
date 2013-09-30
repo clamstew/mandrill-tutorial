@@ -1,2 +1,8 @@
+.DS_Store
+
 .env
+
 vendor/bundle
+.bundle/
+
+Gemfile.lock

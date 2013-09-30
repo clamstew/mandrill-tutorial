@@ -36,7 +36,7 @@ __________________________
 
 Open up this link: [Most useful page for getting started with the Ruby Gem](http://help.mandrill.com/entries/23257181-Using-the-Mandrill-Ruby-Gem). This was a good basic look at the Mandrill API send email function with the <code>gem 'madrill-api'</code> which will go in your gem file.</code>
 
-__STEP 1:__ add <code>gem 'madrill-api'</code> in your <code>Gemfile</code>
+__STEP 1:__ add <code>gem 'madrill-api'</code> in your <code>Gemfile</code> as well as <code>gem 'thin'</code>
 
 <pre>
 source 'https://rubygems.org'
@@ -180,6 +180,12 @@ __NOTE:__ Fill in your email for: <code>youremailprefix%40something.com</code> i
 
 __FINAL:__ If you go to the branch in the repo you forked above called <code>$ git checkout final;</code>. This is my finished code from this tutorial, so you can check that it is all there compared to your work. 
 
+___________________________
+<h3>Extensions to come:</h3>
+
+* How to put in multiple recipients
+* How to put in merge fields for those recipients
+* How to suppress recipients so they don't all show in the To field.
 ___________________________
 
 <h3>Resources:</h3>

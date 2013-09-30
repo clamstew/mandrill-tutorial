@@ -19,7 +19,7 @@ __________________________
 
 <h4>Example APP: My Mail Sender</h4>
 
-We are going to build a quick application to send email to yourself.<!--s out to users who subscribe to your mailing list.-->
+We are going to build a quick application to send email to yourself.
 
 I created a bare bones Sinatra app for this tutorial that you can fork from this repo and clone down.
 
@@ -198,7 +198,7 @@ ___________________________
 
 [Where to view API Logs](https://mandrillapp.com/settings/api)
 
-<!--__NOTE:__ I had to use FOREMAN by heroku instead of thin or webbrick webserver to get env files to work-->
+__NOTE:__ I used FOREMAN by heroku instead of thin or webbrick webserver to get env files to work
 __________________________
 
  

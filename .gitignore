@@ -1,1 +1,3 @@
 .env
+
+vendor/bundle # for bundle in .rbenv
